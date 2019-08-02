@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservacion de Una Habitacion de Hotel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <script>
+        function iniciar() {
+            edad=document.getElementById("miedad");
+            edad.addEventListener("change", cambiarrango, false);
+            document.informacion.addEventListener("invalid", validacion, true);
+            document.getElementById("enviar").addEventListener("click", enviar, false);
+        }
+        function cambiarrango() {
+            var salida=document.getElementById("rango");
+            var calc=edad.value-20;
+            if(calc<20){
+                calc=0;
+                edad.value = 20;
+            }
+            salida.innerHTML=calc+' a '+edad.value;
+        }
+        function validacion(e) {
+            var elemento=e.target;
+            elemento.style.background='#FFDDDD';
+        }
+        function enviar() {
+            var valido=document.informacion.checkValidity();
+            if(valido){
+                document.informacion.submit();
+            }
+        }
+        window.addEventListener("load", iniciar, false);
+    </script>
+</head>
+<body>
+<form id="formulario" name="reservar" method="get">
+<header>
+    <div class="container">
+        <h1>Reserva Habitacion de Hotel</h1>
+    </div>
+</header>
+<div class="container-fluid">
+<section class="main row">
+    <article class="col-md-6">
+        <ul>
+        <datalist id="habitaciones">
+            <option value="Habitacion Paris" label="1">
+            <option value="Habitacion Italia" label="2">
+            <option value="Habitacion Egipto" label="3">
+            <option value="Habitacion España" label="4">
+            <option value="Habitacion Dubai" label="5">
+        </datalist>
+            <datalist id="PreciosHabit">
+                <option value="Q.100.00" label="Paris">
+                <option value="Q.200.00" label="Italia">
+                <option value="Q.300.00" label="Egipto">
+                <option value="Q.400.00" label="España">
+                <option value="Q.500.00" label="Dubai">
+            </datalist>
+
+            <li>Precios Habitaciones(Por Noche)<input type="text" name="precios" id="precios" list="PreciosHabit" placeholder="Vea Aqui Precios"></li>
+            <li>Habitaciones:<input type="text" id="habitacion" name="habitacion" list="habitaciones" placeholder="Seleccione Habitacion">
+            <li>Fecha/Hora Llegada:<input type="datetime-local" id="fechallegada" name="fechallegada"></li>
+            <li>Fecha/Hora Salida:<input type="datetime-local" id="fechasalida" name="fechasalida"></li>
+        </ul>
+    </article>
+
+    <aside class="col-md-6">
+        <table border="2">
+
+            <tr><th>Nombre Quien Reserva:</th> <td><input type="text" name="nombre" id="nombre" placeholder="Nombre Y Apellido"></td></tr>
+            <tr>
+                <th>Edad: </th>
+                <td><input type="range" name="miedad" id="miedad" min="20" max="80" step="5" value="20"><output id="rango">20 a 30</output></td>
+            </tr>
+            <tr><th> Numero de Telefono: </th> <td><input type="tel" id="telefono" name="telefono" ></td></tr>
+            <tr><th> Cantidad de Personas: </th><td><input type="number" id="cantidad"></td></tr>
+        </table>
+    </aside>
+    <nav class="color1"><input type="submit" id="enviar" value="Reservar"></nav>
+</section>
+</div>
+    <div class="form card-bottom">
+    <footer>
+        <h2>Hotel Trivago</h2>
+    </footer>
+    </div>
+</form>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

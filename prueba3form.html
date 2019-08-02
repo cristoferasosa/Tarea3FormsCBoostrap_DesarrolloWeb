@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formul_Ex_3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background: #028205;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<nav class="form card-header">
+    <input type="search" placeholder="Ingrese su Busqueda" name="busqueda" id="busqueda" form="formulario">
+</nav>
+<section class="form card-body">
+    <form name="formulario" id="formulario" method="get" >
+        <input type="text"  placeholder="Ingrese su nombre" name="nombre" id="nombre">
+
+        <datalist id="informacion">
+            <option value="123123123" label="Telefono 1">
+            <option value="456456456" label="Telefono 2">
+        </datalist>
+        <input type="tel" name="telefono" id="telefono" list="informacion">
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

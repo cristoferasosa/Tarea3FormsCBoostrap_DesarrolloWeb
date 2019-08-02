@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripcion Y Registro Medico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<form name="Inscripcion" id="Inscripcion" method="get">
+    <div class="container-fluid">
+    <header><center>
+        <h1>   Inscripcion y Registro Medico</h1>
+    </center></header>
+    </div>
+
+    <div class="container-fluid">
+        <section class="main row">
+       <ul>
+           <li>
+               <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
+               <input type="text" placeholder="Apellido" name="apellido" id="apellido" required>
+           </li>
+           <li>
+               <input pattern="[0-9]{13}" name="number" id="number" title="Ingrese los 13 digitos de No de Dpi " placeholder="Numero de Dpi">
+               <input type="number" name="edad" id="edad" placeholder="Edad" required>
+           </li>
+           <li>
+               Fecha de Ingreso<input type="date" name="fecha" id="fecha" placeholder="Fecha Ingreso">
+               Hora de Ingreso <input type="time" name="hora" id="hora" placeholder="Hora Ingreso"></li>
+           <li>
+               <input type="text" name="direccion" id="direccion" placeholder="Domicilio">
+               <input pattern="[0-9]{8}" name="telefono" id="telefono" title="Ingrese los 8 Digitos de su Numero de Telefono" placeholder="Telefono" required>
+           </li>
+       </ul><ul>
+           <li>
+               <input type="text" name="sexo" id="sexo" placeholder="Sexo">
+               <input type="text" name="estadoc" id="estadoc" placeholder="Estado Civil">
+           </li>
+           <li><input type="text" name="ocupacion" id="ocupacion" placeholder="Ocupacion"> <input type="text" placeholder="Empleo"></li>
+           <li><input type="text" name="diagnostico" id="diagnostico" placeholder="Diagnostico"></li>
+           <li><input type="text" name="NombreDoctor" id="NombreDoctor" placeholder="Nombre del Doctor"></li>
+
+           <input type="submit" value="Guardar Datos" >
+       </ul>
+    </section> </div>
+
+    <div class="container-fluid">
+        <footer>
+
+        </footer>
+    </div>
+</form>
+<script type="text/javascript" src="css/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

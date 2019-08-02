@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud de Empleo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+<form name="solicitud" id="formulario" method="get">
+
+<header>
+    <div class="form card-header">
+        <h1>Datos Solicitud de Empleo - Codigo Dificilito</h1>
+    </div>
+</header>
+
+<div class="container">
+    <section class="main row">
+        <article class="col-md-3.5">
+            <table border="4">
+                <tr><th>Nombre Completo</th><td><input type="text" name="nombre" id="nombre"></td></tr>
+                <tr><th>Edad</th><td><input type="number" name="edad" id="edad"></td></tr>
+                <tr><th>Nacionalidad</th><td><input type="text" name="nacional" id="nacional"></td></tr>
+                <tr> <th>Estado Civil</th> <td><input type="text" name="estado" id="estado"></td></tr>
+                <tr><th>Fecha de Nacimiento</th><td><input type="date" name="fecha" id="fecha"></td></tr>
+                <tr><th>Profesion</th><td> <input type="text" name="profesion" id="profesion"></td></tr>
+                <tr><th>DPI</th> <td> <input type="number" name="dpi" id="dpi"></td></tr>
+                <tr> <th>NIT</th> <td> <input type="number" name="nit" id="nit"></td></tr>
+                <tr><th>Direccion</th><td><input type="text" name="direccion" id="direccion"></td></tr>
+                <tr><th>Telefono</th><td><input type="tel" name="telefono" id="telefono"></td></tr>
+                <tr><th>Email</th><td><input type="email" name="miemail" id="miemail"></td></tr>
+            </table>
+        </article>
+
+        <aside class="col-md-8.5">
+            <table border="4">
+                <tr><th>Experiencia Laboral</th><td><input type="text" name="laboral" id="laboral"></td></tr>
+                <tr><th>Tiempo que trabajo?</th><td> Fecha Inicio<input type="date" name="fechainic" id="fechainic">
+                    Fecha Finalizo<input type="date" name="fechafinal" id="fechafinal"></td></tr>
+                <tr><th>Referencia Laboral </th><td>Nombre<input type="text" name="lab" id="lab">
+                    Telefono<input type="tel" name="phone" id="phone"></td></tr>
+                <tr><th>Referencia Personal</th> <td> Nombre<input type="text" name="person" id="person">
+                    Telefono<input type="tel" name="tel" id="tel"></td></tr>
+                <tr>
+                    <th> Habilidades y Cocimientos</th>
+                    <td><textarea type="text" id="texto" placeholder="Ej. Soy bueno en todo lo que me ponga a hacer "></textarea></td>
+                </tr>
+            </table><input type="button" id="boton" value="Cargar Datos">
+        </aside>
+
+    </section>
+</div>
+
+    <div class="form card">
+        <footer>
+            <h3> Todo lo puedo en cristo que me Fortalece - Filipenses 4:13</h3>
+        </footer>
+    </div>
+
+</form>
+
+<style>
+    header{
+        background: #0056b3;
+        color: #f7f7f7;
+    }
+    section{
+        background: #80bdff;
+        color: #1a1a1a;
+    }
+    footer{
+        background: #0056b3;
+        color: #f7f7f7;
+    }
+</style>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
