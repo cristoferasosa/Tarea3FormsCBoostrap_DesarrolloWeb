@@ -5,16 +5,106 @@
     <title>Solicitud de Cotizaciones de Un Vehiculo </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        header{
+            background: #6f42c1;
+            color: #f7f7f7;
+        }
+        section{
+            background: #0056b3;
+            color: #f7f7f7;
+        }
+        footer{
+            background: #002752;
+            color: #f7f7f7;
+        }
+    </style>
 </head>
 <body>
 <header>
-    <div class="container">
+    <div class="form card-header">
         <h1>Cotizacion de Vehiculo</h1>
     </div>
 </header>
-<section>
+<form id="formulario" method="get">
+    <div class="card">
+<section class="main row">
+    <article class="col-md-4">
+        <h2>Datos Personales</h2>
+        <table border="5">
+            <tr> <th>Nombre </th><td><input type="text" id="nombre" name="nombre" required></td></tr>
+            <tr> <th>Apellido </th><td><input type="text" id="apellido" name="apellido" required></td></tr>
+            <tr> <th>Genero </th><td><input type="text" id="genero" name="genero" list="Sexo"></td></tr>
+            <tr> <th>Edad </th><td><input type="number" id="edad" name="edad" required></td></tr>
+            <datalist id="Sexo">
+                <option value="Masculino">
+                <option value="Femenino" >
+                <option value="En Busca">
+            </datalist>
+            <tr><th>Telefono</th><td><input type="tel" id="telefono" name="telefono" required></td></tr>
+            <tr> <th>Email </th><td><input type="email" id="Email" name="email"></td></tr>
+        </table>
+    </article>
 
-</section>
+    <aside class="col-md-8">
+        <h1> Datos del Vehiculo Cotizado</h1>
+        <table border="5">
+            <tr> <th>Tipo de Vehiculo </th><td><input type="text" id="tipocarro" name="tipocarro" list="Vehiculo" required></td></tr>
+            <datalist id="Vehiculo">
+                <option value="Sedan">
+                <option value="Pick Up">
+                <option value="Camioneta">
+                <option value="Camion">
+            </datalist>
+            <tr> <th>Marca del Vehiculo </th><td><input type="text" id="marcarro" name="marcarro" list="marca" required></td></tr>
+            <datalist id="marca">
+                <option value="Honda">
+                <option value="Mazda">
+                <option value="Toyota">
+                <option value="Nissan">
+                <option value="Bmw">
+                <option value="Ford">
+            </datalist>
+            <tr> <th>Modelo del Vehiculo</th><td><input type="text" id="model" name="model" list="modelo" required></td></tr>
+            <datalist id="modelo">
+                <option value="corrola">
+                <option value="civic">
+                <option value="frontier" >
+                <option value="montero">
+                <option value="Crx">
+                <option value="626">
+            </datalist>
+            <tr> <th>Año del Vehiculo</th><td><input type="number" id="año" name="año" list="anio" required></td></tr>
+            <datalist id="anio">
+                <option value="2010">
+                <option value="2011">
+                <option value="2012" >
+                <option value="2013">
+                <option value="2014">
+                <option value="2015">
+                <option value="2016">
+                <option value="2017">
+                <option value="2018">
+                <option value="2019">
+            </datalist>
+            <tr> <th>Color del Vehiculo</th><td><input type="color" id="colore" name="colore" list="color" required></td></tr>
+            <datalist id="color">
+                <option value="Blanco">
+                <option value="Negro">
+                <option value="Azul" >
+                <option value="Gris">
+                <option value="Rojo">
+                <option value="Verde">
+            </datalist>
+        </table>
+    </aside>
+</section>   </div>
+    <div class="form card">
+    <footer>
+            <input type="submit" value="Cotizar"> <br/>
+    </footer>
+    </div>
+</form>
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

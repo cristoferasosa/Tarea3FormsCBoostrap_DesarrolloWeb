@@ -2,13 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Inscripcion del Curso de Paginas Web</title>
+    <title>Inscripcion al Curso de Paginas Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
+<header>
+    <div class="card-header">
+        <h2>Ingrese sus Datos</h2>
+    </div>
+</header>
+<form id="formulario" method="get">
+<div class="container">
+    <section class="main row">
+        <article class="col-md-4">
+            <h2>Datos Personales</h2>
+            <table border="5">
+                <tr> <th>Nombre </th><td><input type="text" id="nombre" name="nombre" required></td></tr>
+                <tr> <th>Apellido </th><td><input type="text" id="apellido" name="apellido" required></td></tr>
+                <tr> <th>Genero </th><td><input type="text" id="genero" name="genero" list="Sexo"></td></tr>
+                <tr> <th>Edad </th><td><input type="number" id="edad" name="edad" required></td></tr>
+                <datalist id="Sexo">
+                    <option value="Masculino">
+                    <option value="Femenino" >
+                    <option value="En Busca">
+                </datalist>
+                <tr><th>Telefono</th><td><input type="tel" id="telefono" name="telefono" required></td></tr>
+                <tr> <th>Email </th><td><input type="email" id="Email" name="email"></td></tr>
+            </table>
+        </article>
+        <aside class="col-md-8">
+            <h2>Curso a Inscribirse</h2>
+            <ul>
+                <li> Codigo del Curso: <input type="number" name="codigo" id="codigocurso" ></li>
+                <li> Nombre del Curso: <input type="text" id="nombrecurso" name="nombrecurso" ></li>
+                <li> Seccion a Asignarse: <input type="text" id="seccion" name="seccion" list="seccionins" required></li>
 
+            <datalist id="seccionins">
+                <option value="Seccion A ">
+                <option value="Seccion B ">
+            </datalist>
+            </ul>
+        </aside>
+    </section>
 
+</div>
+<div class="form card-footer">
+    <footer>
+        <input type="submit" value="Asignarse">
+
+    </footer>
+</div>
+</form>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e5f4345-0dc5-4403-a5b3-47dcc3baaea6" name="Default Changelist" comment="" />
+    <list default="true" id="7e5f4345-0dc5-4403-a5b3-47dcc3baaea6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form_InscripcionCursoPagWeb.html" beforeDir="false" afterPath="$PROJECT_DIR$/Form_InscripcionCursoPagWeb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form_SolicitudCotizacionVehiculo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Form_SolicitudCotizacionVehiculo.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,13 +21,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Form_SolicitudDeEmpleo.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1Ob6GwR5VPLFJN6ScNbC6DoXhH4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PhpProjects" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -54,11 +65,28 @@
       <workItem from="1564596615260" duration="987000" />
       <workItem from="1564601991425" duration="11801000" />
       <workItem from="1564633447040" duration="8627000" />
-      <workItem from="1564705805386" duration="2121000" />
+      <workItem from="1564705805386" duration="3590000" />
+      <workItem from="1564802954858" duration="590000" />
+      <workItem from="1564841458282" duration="1485000" />
+      <workItem from="1564845237224" duration="919000" />
+      <workItem from="1564890102420" duration="5562000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
