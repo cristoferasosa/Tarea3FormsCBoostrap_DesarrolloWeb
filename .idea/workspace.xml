@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e5f4345-0dc5-4403-a5b3-47dcc3baaea6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_InscripcionCursoPagWeb.html" beforeDir="false" afterPath="$PROJECT_DIR$/Form_InscripcionCursoPagWeb.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_SolicitudCotizacionVehiculo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Form_SolicitudCotizacionVehiculo.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +67,7 @@
       <workItem from="1564841458282" duration="1485000" />
       <workItem from="1564845237224" duration="919000" />
       <workItem from="1564890102420" duration="5562000" />
+      <workItem from="1564929048970" duration="602000" />
     </task>
     <servers />
   </component>

@@ -5,6 +5,20 @@
     <title>Inscripcion al Curso de Paginas Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+        header{
+            background: blue;
+            color: aliceblue;
+        }
+        section{
+            background: rgba(76, 0, 255, 0.89);
+            color: aliceblue;
+        }
+        footer{
+            background:  rgba(0, 140, 255, 0.925);
+            color: aliceblue;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -12,44 +26,52 @@
         <h2>Ingrese sus Datos</h2>
     </div>
 </header>
-<form id="formulario" method="get">
-<div class="container">
-    <section class="main row">
+<div class="container-fluid">
+    <form id="formulario" name="Miformulario" method="get" autocomplete="on">
+    <section class="main row">           
         <article class="col-md-4">
             <h2>Datos Personales</h2>
             <table border="5">
-                <tr> <th>Nombre </th><td><input type="text" id="nombre" name="nombre" required></td></tr>
-                <tr> <th>Apellido </th><td><input type="text" id="apellido" name="apellido" required></td></tr>
-                <tr> <th>Genero </th><td><input type="text" id="genero" name="genero" list="Sexo"></td></tr>
-                <tr> <th>Edad </th><td><input type="number" id="edad" name="edad" required></td></tr>
+                <tr> <th>Nombre </th><td><input type="text" id="nombre" name="nombre" size="30" required></td></tr>
+                <tr> <th>Apellido </th><td><input type="text" id="apellido" name="apellido"  size="30" required></td></tr>
+                <tr> <th>Genero </th><td><input type="text" id="genero" name="genero" size="30" list="Sexo"></td></tr>
+                <tr> <th>Edad </th><td><input type="number" id="edad" name="edad" size="30" required></td></tr>
                 <datalist id="Sexo">
                     <option value="Masculino">
                     <option value="Femenino" >
                     <option value="En Busca">
                 </datalist>
-                <tr><th>Telefono</th><td><input type="tel" id="telefono" name="telefono" required></td></tr>
-                <tr> <th>Email </th><td><input type="email" id="Email" name="email"></td></tr>
+                <tr><th>Telefono</th><td><input type="tel" id="telefono" name="telefono" size="30" required></td></tr>
+                <tr> <th>Email </th><td><input type="email" id="Email" name="email" size="30"></td></tr>
             </table>
         </article>
         <aside class="col-md-8">
             <h2>Curso a Inscribirse</h2>
             <ul>
                 <li> Codigo del Curso: <input type="number" name="codigo" id="codigocurso" ></li>
-                <li> Nombre del Curso: <input type="text" id="nombrecurso" name="nombrecurso" ></li>
-                <li> Seccion a Asignarse: <input type="text" id="seccion" name="seccion" list="seccionins" required></li>
-
+                <li> Nombre del Curso: <input type="text" id="nombrecurso" name="nombrecurso" size="30" ></li>
+                <li> Seccion a Asignarse: <input type="text" id="seccion" name="seccion" list="seccionins" required></li>        
             <datalist id="seccionins">
                 <option value="Seccion A ">
                 <option value="Seccion B ">
             </datalist>
-            </ul>
+            </ul>              
+            <input type="submit" value="Inscribirse">          
         </aside>
-    </section>
-
+        
+    </section></form>
 </div>
-<div class="form card-footer">
+<div class="container-fluid">
     <footer>
-        <input type="submit" value="Asignarse">
+            <h2>Pago/Cobro en linea</h2>            
+            <li><label for="frmNameCC">Nombre de Tarjeta</label> 
+            <input name="ccname" id="frmNameCC" required placeholder="Full Name" autocomplete="cc-name"> </li>
+            <li><label for="frmCCNum">Numero de Tarjeta</label> 
+            <input name="cardnumber" id="frmCCNum" required autocomplete="cc-number"> </li>
+            <li><label for="frmCCCVC">CVC</label> 
+            <input name="cvc" id="frmCCCVC" required autocomplete="cc-csc"> </li>
+            <li><label for="frmCCExp">Expiracion</label> 
+            <input name="cc-exp" id="frmCCExp" required placeholder="MM-YYYY" autocomplete="cc-exp"></li>
 
     </footer>
 </div>
